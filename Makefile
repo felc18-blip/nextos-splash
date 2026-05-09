@@ -5,7 +5,7 @@ SRCS=main.c fbsplash.c svg_parser.c svg_renderer.c dt_rotation.c
 OBJS=$(SRCS:.c=.o)
 
 # Name of the final executable
-TARGET=rocknix-splash
+TARGET=nextos-splash
 
 # Installation directory
 PREFIX=/usr
@@ -18,8 +18,9 @@ BINDIR=$(PREFIX)/bin
 all: $(TARGET)
 
 # Link object files to create the final executable
+# -lm needed for floorf/ceilf in svg_renderer.c
 $(TARGET): $(OBJS)
-	$(CC) $(OBJS) -o $(TARGET) $(LDFLAGS)
+	$(CC) $(OBJS) -o $(TARGET) $(LDFLAGS) -lm
 
 # Generic rule for compiling .c files into .o files
 %.o: %.c

@@ -9,49 +9,54 @@
 #include "dt_rotation.h"
 
 /*
- * SVG path data for rendering the "ARCH R" logo
+ * SVG path data for rendering the "NextOS" logo
  * Generated from Quantico Bold font (https://fonts.google.com/specimen/Quantico)
  * Coordinate space: 1284 x 500
  *
  * Index meaning:
- * 0: "A" - blue
- * 1: "R" - blue
- * 2: "C" - blue
- * 3: "H" - blue
- * 4: "R" - white (separated by gap)
+ * 0: "N" - blue
+ * 1: "e" - blue
+ * 2: "x" - blue
+ * 3: "t" - blue
+ * 4: "O" - white (separated by gap)
+ * 5: "S" - white
  */
 const char *svg_paths[] = {
-    /* A (Quantico Bold) */
-    "M 180.9 130.0 L 266.6 370.0 L 219.3 370.0 L 201.1 318.2 L 111.3 318.2 L 93.1 370.0 L 45.8 370.0 L 131.5 130.0 Z M 155.8 190.3 L 125.7 277.1 L 186.3 277.1 L 156.5 190.3 Z",
-    /* R (Quantico Bold) */
-    "M 485.7 370.0 L 432.9 370.0 L 381.4 279.5 L 351.6 279.5 L 351.6 370.0 L 303.6 370.0 L 303.6 130.0 L 433.5 130.0 L 473.3 153.0 L 473.3 256.5 L 433.5 279.5 Z M 351.6 171.1 L 351.6 238.3 L 425.3 238.3 L 425.3 171.1 Z",
-    /* C (Quantico Bold) */
-    "M 662.9 299.7 L 710.9 299.7 L 710.9 348.7 L 671.1 371.7 L 574.1 371.7 L 534.3 348.7 L 534.3 151.3 L 574.1 128.3 L 671.1 128.3 L 710.9 151.3 L 710.9 200.3 L 662.9 200.3 L 662.9 169.4 L 582.3 169.4 L 582.3 330.6 L 662.9 330.6 Z",
-    /* H (Quantico Bold) */
-    "M 816.5 267.1 L 816.5 370.0 L 768.5 370.0 L 768.5 130.0 L 816.5 130.0 L 816.5 226.0 L 910.8 226.0 L 910.8 130.0 L 958.8 130.0 L 958.8 370.0 L 910.8 370.0 L 910.8 267.1 Z",
-    /* R white (Quantico Bold) - separated by larger gap */
-    "M 1226.6 370.0 L 1173.8 370.0 L 1122.3 279.5 L 1092.5 279.5 L 1092.5 370.0 L 1044.5 370.0 L 1044.5 130.0 L 1174.5 130.0 L 1214.2 153.0 L 1214.2 256.5 L 1174.5 279.5 Z M 1092.5 171.1 L 1092.5 238.3 L 1166.2 238.3 L 1166.2 171.1 Z"
+    /* N (Quantico Bold) */
+    "M 100.8 225.0V 370.0H 56.0V 146.0H 97.9L 194.6 291.0H 195.2V 146.0H 240.0V 370.0H 198.1L 101.4 225.0Z",
+    /* e (Quantico Bold) */
+    "M 424.0 332.6V 370.0H 328.3L 291.2 348.6V 229.8L 328.3 208.4H 386.9L 424.0 229.8V 306.3H 335.0V 332.6ZM 335.0 245.8V 273.4H 380.2V 245.8Z",
+    /* x (Quantico Bold) */
+    "M 452.8 370.0 L 511.0 288.4 L 454.7 210.0H 502.4L 533.8 255.1L 565.1 210.0H 612.8L 556.2 288.4L 614.7 370.0H 567.7L 533.8 322.0L 499.8 370.0Z",
+    /* t (Quantico Bold) */
+    "M 630.7 247.4V 210.0H 660.2V 183.1L 704.0 157.8V 210.0H 739.2V 247.4H 704.0V 332.6H 739.2V 370.0H 697.3L 660.2 348.6V 247.4Z",
+    /* O white (Quantico Bold) - separated by larger gap */
+    "M 1018.4 350.2 L 981.3 371.6H 881.1L 844.0 350.2V 165.8L 881.1 144.4H 981.3L 1018.4 165.8ZM 888.8 182.8V 333.2H 973.6V 182.8Z",
+    /* S (Quantico Bold) */
+    "M 1072.8 256.4V 165.8L 1109.9 144.4H 1190.9L 1228.0 165.8V 208.4H 1183.2V 182.8H 1117.6V 236.2H 1190.9L 1228.0 257.7V 350.2L 1190.9 371.6H 1106.7L 1069.6 350.2V 307.6H 1114.4V 333.2H 1183.2V 277.8H 1109.9Z"
 };
 
 /* Color definitions
- * "ARCH" = blue (#0088FF)
- * "R"    = white (#FFFFFF)
+ * "Next" = blue (#0088FF)
+ * "OS"   = white (#FFFFFF)
  */
 const char *svg_colors[] = {
-    "rgb(0,136,255)",   /* A - blue */
-    "rgb(0,136,255)",   /* R - blue */
-    "rgb(0,136,255)",   /* C - blue */
-    "rgb(0,136,255)",   /* H - blue */
-    "rgb(255,255,255)"  /* R - white */
+    "rgb(0,136,255)",   /* N - blue */
+    "rgb(0,136,255)",   /* e - blue */
+    "rgb(0,136,255)",   /* x - blue */
+    "rgb(0,136,255)",   /* t - blue */
+    "rgb(255,255,255)", /* O - white */
+    "rgb(255,255,255)"  /* S - white */
 };
 
 /* Glow colors: dimmer versions for the subtle glow effect */
 const char *glow_colors[] = {
-    "rgb(0,48,112)",    /* A - dim blue glow */
-    "rgb(0,48,112)",    /* R - dim blue glow */
-    "rgb(0,48,112)",    /* C - dim blue glow */
-    "rgb(0,48,112)",    /* H - dim blue glow */
-    "rgb(80,80,112)"    /* R - dim gray-blue glow */
+    "rgb(0,48,112)",    /* N - dim blue glow */
+    "rgb(0,48,112)",    /* e - dim blue glow */
+    "rgb(0,48,112)",    /* x - dim blue glow */
+    "rgb(0,48,112)",    /* t - dim blue glow */
+    "rgb(80,80,112)",   /* O - dim gray-blue glow */
+    "rgb(80,80,112)"    /* S - dim gray-blue glow */
 };
 
 #define NUM_PATHS (sizeof(svg_paths) / sizeof(svg_paths[0]))
